@@ -64,8 +64,18 @@ area(10)\
 area(10)\
     output: 40
 
+#Файл с тестами unittest
+- Для создания тестов используется библиотека [unittes](https://docs.python.org/3/library/unittest.html)
+- Для каждой функции делается проверка на: 
+     1) valid(соответствует ли выполняемый результат верному значению)
+     2) value(тестируется поведение функции при передаче отрицательного и нулевого значения)
+     3) type(тестируется поведение функции при передаче отличных от integer типов данных)
+     4) large(тестируется поведение функции при передаче значения больше миллиарда)
+     5) smallest(тестируется поведение функции при передаче значения меньше миллиарда)
+- Тесты прописаны в файле [test.py](https://github.com/vladik2801/geometric_lib/blob/documentation/test.py)
 # История изменений
 - [55cea7cb5f38d7a49984df46416bd9787b43ca23: Добавлен новый файл](https://github.com/vladik2801/geometric_lib/commit/55cea7cb5f38d7a49984df46416bd9787b43ca23)
 - [b21b25c0a7c379dbbf8820730b04a65ce0e9d23b: Исправлена функция с ошибкой](https://github.com/vladik2801/geometric_lib/commit/b21b25c0a7c379dbbf8820730b04a65ce0e9d23b)
 - [63f4f23513916bac21642a5a4b5ae646308e71f7  Внесены конечные корректировки](https://github.com/vladik2801/geometric_lib/commit/63f4f23513916bac21642a5a4b5ae646308e71f7) 
 - [5916e14f51f255d73dc62c9f79d3b33acb58c050  Добавлена документация](https://github.com/vladik2801/geometric_lib/commit/5916e14f51f255d73dc62c9f79d3b33acb58c050)
+- [42dc26bcdf08d68de42d1875b7d4de2461e10b9c Добавлены unittest-ы](https://github.com/vladik2801/geometric_lib/commit/42dc26bcdf08d68de42d1875b7d4de2461e10b9c)
