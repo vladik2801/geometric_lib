@@ -1,0 +1,28 @@
+name: CI
+on:
+  push:
+    branches: ["main", "new_features_467566", "documentation"]
+jobs:
+  testing_on_windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - name: Launch tests on windows
+        run:
+          python -m unittest discover tests
+
+  testing_on_ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - name: Launch tests on ubuntu
+        run:
+          python -m unittest discover tests
