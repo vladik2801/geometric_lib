@@ -13,7 +13,7 @@ jobs:
           python-version: 3.9
       - name: Launch tests on windows
         run:
-          python -m unittest discover tests
+          python -m unittest test
 
   testing_on_ubuntu:
     runs-on: ubuntu-latest
